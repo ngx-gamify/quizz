@@ -1,2 +1,2 @@
-# quizz
-A quizz libary for Angular 6+
+# @ngx-gamify/quizz
+A quizz library for Angular 6+

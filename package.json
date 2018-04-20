@@ -1,0 +1,47 @@
+{
+  "name": "@ngx-gamify/quizz",
+  "version": "0.0.1",
+  "description": "A quizz library for Angular 6+",
+  "engines": {
+    "node": "~8.11.0",
+    "npm": "~5.8.0"
+  },
+  "keywords": [
+    "quizz",
+    "angular6",
+    "rxjs",
+    "reactive",
+    "angular",
+    "typescript",
+    "observable"
+  ],
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "ng-packagr -p lib/ng-package.json && mv lib/dist ./ && mv lib/dist.tgz ./",
+    "clean": "rimraf dist dist.tgz bundles coverage src/**/*.d.ts src/**/*.metadata.json src/**/*.js tests/**/*.d.ts tests/**/*.metadata.json tests/**/*.js index.d.ts index.metadata.json index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngx-gamify/quizz.git"
+  },
+  "author": "Loic TRUCHOT <loic.truchot.pro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngx-gamify/quizz/issues"
+  },
+  "homepage": "https://github.com/ngx-gamify/quizz#readme",
+  "dependencies": {
+    "@angular/common": "5.2.10",
+    "@angular/core": "5.2.10",
+    "rxjs": "5.5.10"
+  },
+  "devDependencies": {
+    "@angular/compiler": "5.2.10",
+    "@angular/compiler-cli": "5.2.10",
+    "codelyzer": "4.2.1",
+    "ng-packagr": "2.4.2",
+    "tslint": "5.9.1",
+    "typescript": "2.7.2"
+  }
+}

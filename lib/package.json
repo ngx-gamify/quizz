@@ -1,6 +1,6 @@
 {
   "name": "@ngx-gamify/quizz",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A quizz library for Angular 6+",
   "engines": {
     "node": "~8.11.0",

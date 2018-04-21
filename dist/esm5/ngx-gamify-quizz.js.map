@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "ngx-gamify-quizz.js",
+  "sources": [
+    "ng://@ngx-gamify/quizz/out/index.ts",
+    "ng://@ngx-gamify/quizz/out/src/quizz.component.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { QuizzComponent } from './src/quizz.component';\n\nexport * from './src/quizz.component';\n\n@NgModule({\n  imports: [CommonModule],\n  declarations: [QuizzComponent],\n  exports: [QuizzComponent]\n})\nexport class QuizzModule {}\n",
+    "import { Component, OnInit, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-quizz',\n  template: `<p>\n  quizz works! {{ data | json}}\n</p>`\n})\nexport class QuizzComponent implements OnInit {\n  @Input() data: any;\n  constructor() {}\n\n  ngOnInit() {}\n}\n"
+  ],
+  "names": [],
+  "mappings": ";;;ACAA;IAUE;KAAgB;IAEhB,iCAAQ,GAAR,eAAa;;;;IAVf,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,WAAW;gBACrB,QAAQ,EAAE,4CAEP;aACJ,EAAD,EAAA;;;;IAEA,MAAA,EAAA,CAAA,EAAA,IAAA,EAAG,KAAK,EAAR,EAAA;;ADTA;IAAA;;;;;IAMA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACR,OAAO,EAAE,CAAC,YAAY,CAAC;gBACvB,YAAY,EAAE,CAAC,cAAc,CAAC;gBAC9B,OAAO,EAAE,CAAC,cAAc,CAAC;aAC1B,EAAD,EAAA;;;;;"
+}

@@ -32,16 +32,12 @@
   },
   "homepage": "https://github.com/ngx-gamify/quizz#readme",
   "dependencies": {
-    "@angular/common": "5.2.10",
-    "@angular/core": "5.2.10",
-    "rxjs": "5.5.10"
+    "tslib": "^1.7.1"
   },
-  "devDependencies": {
-    "@angular/compiler": "5.2.10",
-    "@angular/compiler-cli": "5.2.10",
-    "codelyzer": "4.2.1",
-    "ng-packagr": "2.4.2",
-    "tslint": "5.9.1",
-    "typescript": "2.7.2"
-  }
+  "devDependencies": {},
+  "main": "bundles/ngx-gamify-quizz.umd.js",
+  "module": "esm5/ngx-gamify-quizz.js",
+  "es2015": "esm2015/ngx-gamify-quizz.js",
+  "typings": "ngx-gamify-quizz.d.ts",
+  "metadata": "ngx-gamify-quizz.metadata.json"
 }

@@ -1,3 +1,20 @@
-<p>
-  quizz works! {{ data | json}}
-</p>
+<div [ngClass]="{ 'container': bootstrap }">
+  <h2>{{ (name$ | async) }}</h2>
+  <div [ngClass]="{ 'row': bootstrap }">
+    <div class="col">{{ data.items[0].q.fr }}</div>
+  </div>
+  <div [ngClass]="{ 'row': bootstrap }">
+    <div [ngClass]="{ 'col-6': bootstrap }"></div>
+  </div>
+</div>
+<!-- <pre>{{ (quizzSubject$ | async)?.name?.fr | json }}</pre> -->
+
+<!--
+title: domService.createTitle('Choose a Quizz...'),
+rowTitle: domService.createRow(),
+rowQ: domService.createRow(),
+rowA: domService.createRow(),
+nav: domService.createNav(),
+score: domService.createRow(),
+choiceBtns: []
+-->
